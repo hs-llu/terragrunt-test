@@ -15,7 +15,9 @@ jobs:
       - name: Create a new branch
         run: git checkout -b "update_plugins"
       - name: update plugins
-        run: ./ci_scripts/update_plugins.sh
+        run: |
+          chmod +x ./ci_scripts/update_plugins.sh
+          ./ci_scripts/update_plugins.sh
       - name: Add and Commit
         uses: EndBug/add-and-commit@v7
         with:
