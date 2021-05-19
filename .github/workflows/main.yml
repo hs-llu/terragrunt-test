@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Create a new branch
-        run: git checkout -b "update_plugins"
+        run: git branch update_plugins && git push origin
       - name: append text to the end of file
         run: echo '# remove' >> new_file.txt
       - name: Add and Commit
@@ -22,8 +22,8 @@ jobs:
           add: 'new_file.txt'
           message: 'updated plugins.txt'
           branch: update_plugins
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          base: main
-          branch: update_plugins
+#       - name: Create Pull Request
+#         uses: peter-evans/create-pull-request@v3
+#         with:
+#           base: main
+#           branch: update_plugins
