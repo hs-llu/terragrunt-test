@@ -21,7 +21,7 @@ jobs:
       - name: Add and Commit
         uses: EndBug/add-and-commit@v7
         with:
-          add: 'new_file.txt'
+          add: 'plugins.txt'
           message: 'updated plugins.txt'
           push: origin update_plugins
       - name: Create Pull Request
