@@ -27,3 +27,5 @@ jobs:
         with:
           base: master
           branch: update_plugins
+          delete-branch: true
+          reviewers: hs-llu
