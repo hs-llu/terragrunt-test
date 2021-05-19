@@ -1,0 +1,118 @@
+#LAST_CACHED_20210519
+
+ace-editor:latest #JavaScript GUI Lib: ACE Editor bundle plugin
+amazon-ecs:latest #ECS plugin for launching agents
+ansicolor:latest #Jenkins ANSI Color Plugin
+apache-httpcomponents-client-4-api:latest #Apache HttpComponents Client 4.x API Plugin
+authentication-tokens:latest #Authentication Tokens API Plugin
+authorize-project:latest #Project build trigger authorization
+blueocean-autofavorite:latest #Autofavorite for Blue Ocean
+blueocean-bitbucket-pipeline:latest #Bitbucket Pipeline for Blue Ocean
+blueocean-commons:latest #Common API for Blue Ocean
+blueocean-config:latest #Config API for Blue Ocean
+blueocean-core-js:latest #Blue Ocean Core JS
+blueocean-dashboard:latest #Dashboard for Blue Ocean
+blueocean-display-url:latest #Display URL for Blue Ocean
+blueocean-events:latest #Events API for Blue Ocean
+blueocean-git-pipeline:latest #Git Pipeline for Blue Ocean
+blueocean-github-pipeline:latest #GitHub Pipeline for Blue Ocean
+blueocean-i18n:latest #i18n for Blue Ocean
+blueocean-jira:latest #JIRA Integration for Blue Ocean
+blueocean-jwt:latest #JWT for Blue Ocean
+blueocean-personalization:latest #Personalization for Blue Ocean
+blueocean-pipeline-api-impl:latest #Pipeline implementation for Blue Ocean
+blueocean-pipeline-editor:latest #Blue Ocean Pipeline Editor
+blueocean-pipeline-scm-api:latest #Pipeline SCM API for Blue Ocean
+blueocean-rest-impl:latest #REST Implementation for Blue Ocean
+blueocean-rest:latest #REST API for Blue Ocean
+blueocean-web:latest #Web for Blue Ocean
+blueocean:latest #Blue Ocean
+bootstrap4-api:latest #Bootstrap 4 API Plugin
+bouncycastle-api:latest #bouncycastle API Plugin
+branch-api:latest #Branch API Plugin
+checks-api:latest #Checks API plugin
+cloudbees-bitbucket-branch-source:latest #Bitbucket Branch Source Plugin
+cloudbees-folder:latest #Folders Plugin
+command-launcher:latest #Command Agent Launcher Plugin
+config-file-provider:latest #Config File Provider
+configuration-as-code:latest
+credentials-binding:latest #Credentials Binding Plugin
+credentials:latest #Credentials Plugin
+display-url-api:latest #Display URL API
+docker-commons:latest #Docker Commons Plugin
+docker-workflow:latest #Docker Pipeline
+durable-task:latest #Durable Task Plugin
+echarts-api:latest #ECharts API Plugin
+email-ext:latest #Email Extension Plugin
+favorite:latest #Favorite
+font-awesome-api:latest #Font Awesome API Plugin
+git-client:latest #Git client plugin
+git-server:latest #GIT server Plugin
+git:latest #Git plugin
+github-api:latest #GitHub API Plugin
+github-branch-source:latest #GitHub Branch Source Plugin
+github-oauth:latest #GitHub Oauth Integration
+github:latest #GitHub plugin
+global-slack-notifier:latest #Global Slack Notifier
+handlebars:latest #JavaScript GUI Lib: Handlebars bundle plugin
+handy-uri-templates-2-api:latest #Handy Uri Templates 2.x API Plugin
+htmlpublisher:latest #HTML Publisher plugin
+jackson2-api:latest #Jackson 2 API Plugin
+jdk-tool:latest #Oracle Java SE Development Kit Installer Plugin
+jenkins-design-language:latest #Design Language
+job-dsl:latest #Job DSL
+jquery3-api:latest #JQuery3 API Plugin
+jsch:latest #JSch dependency plugin
+junit:latest #JUnit Plugin
+ldap:latest #LDAP Plugin
+lockable-resources:latest #Lockable Resources plugin
+mailer:latest #Mailer Plugin
+matrix-auth:latest #Matrix Authorization Strategy Plugin
+matrix-project:latest #Matrix Project Plugin
+momentjs:latest #JavaScript GUI Lib: Moment.js bundle plugin
+okhttp-api:latest #OkHttp Plugin
+pam-auth:latest #PAM Authentication plugin
+pipeline-build-step:latest #Pipeline: Build Step
+pipeline-github-lib:latest #Pipeline: GitHub Groovy Libraries
+pipeline-graph-analysis:latest #Pipeline Graph Analysis Plugin
+pipeline-input-step:latest #Pipeline: Input Step
+pipeline-milestone-step:latest #Pipeline: Milestone Step
+pipeline-model-api:latest #Pipeline: Model API
+pipeline-model-definition:latest #Pipeline: Declarative
+pipeline-model-extensions:latest #Pipeline: Declarative Extension Points API
+pipeline-multibranch-defaults:latest #Pipeline: Multibranch with defaults
+pipeline-rest-api:latest #Pipeline: REST API Plugin
+pipeline-stage-step:latest #Pipeline: Stage Step
+pipeline-stage-tags-metadata:latest #Pipeline: Stage Tags Metadata
+pipeline-stage-view:latest #Pipeline: Stage View Plugin
+plain-credentials:latest #Plain Credentials Plugin
+plugin-util-api:latest #Plugin Utilities API Plugin
+popper-api:latest #Popper.js API Plugin
+pubsub-light:latest #Pub-Sub "light" Bus
+resource-disposer:latest #Resource Disposer Plugin
+scm-api:latest #SCM API Plugin
+script-security:latest #Script Security Plugin
+slack:latest #Slack Notification Plugin
+snakeyaml-api:latest #Snakeyaml API Plugin
+sse-gateway:latest #Server Sent Events (SSE) Gateway Plugin
+ssh-agent:latest #SSH Agent Plugin
+ssh-credentials:latest #SSH Credentials Plugin
+ssh-slaves:latest #SSH Build Agents plugin
+startup-trigger-plugin:latest #Startup Trigger Plugin
+structs:latest #Structs Plugin
+timestamper:latest #Timestamper
+token-macro:latest #Token Macro Plugin
+trilead-api:latest #Trilead API Plugin
+variant:latest #Variant Plugin
+workflow-aggregator:latest #Pipeline
+workflow-api:latest #Pipeline: API
+workflow-basic-steps:latest #Pipeline: Basic Steps
+workflow-cps-global-lib:latest #Pipeline: Shared Groovy Libraries
+workflow-cps:latest #Pipeline: Groovy
+workflow-durable-task-step:latest #Pipeline: Nodes and Processes
+workflow-job:latest #Pipeline: Job
+workflow-multibranch:latest #Pipeline: Multibranch
+workflow-scm-step:latest #Pipeline: SCM Step
+workflow-step-api:latest #Pipeline: Step API
+workflow-support:latest #Pipeline: Supporting APIs
+ws-cleanup:latest #Workspace Cleanup Plugin
