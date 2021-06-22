@@ -1,9 +1,11 @@
 ---
-name: 'Update plugins to force cache invalidation'
-on: # yamllint disable-line
-  schedule:
-    - cron: '0 5 * * 4'
-  workflow_dispatch:
+name: 'Terraform PR steps'
+
+on:
+  - pull_request
+env:
+  CODE_DIR: code
+  TFENV_DIR: tfenv
 
 jobs:
   label:
