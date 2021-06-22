@@ -6,30 +6,13 @@ on: # yamllint disable-line
   workflow_dispatch:
 
 jobs:
-  update_plugins:
-    name: Update date on plugins.txt
+  label:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Create a new branch
-        run: git checkout -b "update_plugins"
-      - name: update plugins
-        run: |
-          chmod +x ./ci_scripts/update_plugins.sh
-          ./ci_scripts/update_plugins.sh
-      - name: Add and Commit
-        uses: EndBug/add-and-commit@v7
+      - uses: actions/checkout@v2
         with:
-          add: 'plugins.txt'
-          message: 'updated plugins.txt'
-          push: origin update_plugins
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          base: master
-          branch: update_plugins
-          title: update plugins
-          delete-branch: true
-          reviewers: hs-llu
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Get diff size
+        run: echo "SIZE=$(git diff --shortstat master . ':(exclude)*.md' | cut -d' ' -f5)" >> $GITHUB_ENV
           
