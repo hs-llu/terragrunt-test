@@ -12,10 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        ref: ${{ github.event.pull_request.head.ref }}
           
       - name: debug
         run: ls -a
       
       - name: Get diff size
-        run: echo "SIZE=$(git diff --shortstat master . ':(exclude)*.md' | cut -d' ' -f5)" >> $GITHUB_ENV
+        run: echo "SIZE=$(git diff --shortstat origin/master . ':(exclude)*.md' | cut -d' ' -f5)" >> $GITHUB_ENV
           
