@@ -18,7 +18,10 @@ jobs:
           
       - name: debug
         run: ls -a
-      
+        
+      - name: fetch master
+        run: git fetch origin master:master
+        
       - name: Get diff size
         run: echo "SIZE=$(git diff --shortstat master . ':(exclude)*.md' | cut -d' ' -f5)" >> $GITHUB_ENV
           
