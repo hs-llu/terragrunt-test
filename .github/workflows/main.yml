@@ -1,20 +1,14 @@
----
-name: 'Terraform PR steps'
-
 on:
-  - pull_request
-env:
-  CODE_DIR: code
-  TFENV_DIR: tfenv
+  push:
+    branches:
+      - master
 
 jobs:
-  label:
+  release-on-push:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: rymndhng/release-on-push-action@v0.18.0
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
-
-      - name: Get diff size
-        run: echo "SIZE=$(git diff --shortstat master . ':(exclude)*.md' | cut -d' ' -f5)" >> $GITHUB_ENV
-          
+          bump_version_scheme: minor
