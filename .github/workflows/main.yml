@@ -1,33 +1,14 @@
----
-name: 'Update plugins to force cache invalidation'
-on: # yamllint disable-line
-  schedule:
-    - cron: '0 5 * * 4'
-  workflow_dispatch:
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  update_plugins:
-    name: Update date on plugins.txt
+  release-on-push:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Create a new branch
-        run: git checkout -b "update_plugins"
-      - name: append text to the end of file
-        run: echo '# remove' >> new_file.txt
-      - name: Add and Commit
-        uses: EndBug/add-and-commit@v7
+      - uses: rymndhng/release-on-push-action@v0.18.0
         with:
-          add: 'new_file.txt'
-          message: 'updated plugins.txt'
-          push: origin update_plugins
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          base: master
-          branch: update_plugins
-          title: update plugins
-          delete-branch: true
-          reviewers: hs-llu
-          
+          bump_version_scheme: minor
