@@ -12,6 +12,8 @@ jobs:
       - uses: rymndhng/release-on-push-action@v0.18.0
         with:
           bump_version_scheme: minor
+      - name: Checkout
+        uses: actions/checkout@v2
       - uses: EndBug/latest-tag@latest
         with:
           # You can change the name of the tag with this input.
