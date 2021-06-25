@@ -1,7 +1,6 @@
 
 #LAST_CACHED_20210519
 ace-editor:latest #JavaScript GUI Lib: ACE Editor bundle plugin
-amazon-ecs:latest #ECS plugin for launching agents
 ansicolor:latest #Jenkins ANSI Color Plugin
 apache-httpcomponents-client-4-api:latest #Apache HttpComponents Client 4.x API Plugin
 authentication-tokens:latest #Authentication Tokens API Plugin
