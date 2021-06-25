@@ -27,6 +27,6 @@ jobs:
     description: Description for the tag
       - name: Check Output Parameters
         run: |
-          echo "Got tag name ${{ steps.release.outputs.tag_name.split(',')[0] }}"
+          echo "Got tag name ${{ steps.release.outputs.tag_name.split(',') }}"
           echo "Got release version ${{ steps.release.outputs.version }}"
 
