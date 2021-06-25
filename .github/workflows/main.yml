@@ -11,4 +11,14 @@ jobs:
     steps:
       - uses: rymndhng/release-on-push-action@v0.18.0
         with:
-          bump_version_scheme: major
+          bump_version_scheme: minor
+      - uses: EndBug/latest-tag@latest
+        with:
+          # You can change the name of the tag with this input.
+          # Default: 'latest'
+          tag-name: CustomTagName
+
+          # If a description is provided, the action will use it to create an annotated tag. If none is given, the action will create a lightweight tag.
+          # Optional
+          description: Description for the tag
+
