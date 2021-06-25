@@ -9,7 +9,8 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: rymndhng/release-on-push-action@v0.18.0
+      - name: release
+        uses: rymndhng/release-on-push-action@v0.18.0
         with:
           bump_version_scheme: minor
       - name: Checkout
@@ -17,4 +18,8 @@ jobs:
       - uses: Actions-R-Us/actions-tagger@latest
         with:
           publish_latest_tag: false
+      - name: Check Output Parameters
+        run: |
+          echo "Got tag name ${{ steps.release.outputs.tag_name }}"
+          echo "Got release version ${{ steps.release.outputs.version }}"
 
