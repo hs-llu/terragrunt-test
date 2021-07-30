@@ -1,0 +1,7 @@
+[profile hs-lucy]
+sso_start_url = https://homestars.awsapps.com/start
+sso_region = us-east-1
+sso_account_id = 131628900822
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = yaml
