@@ -2,6 +2,7 @@
 repos:
 - id: /.*/
   allow_custom_workflows: true
+  allowed_overrides: [workflow]
   pre_workflow_hooks:
     - run: terragrunt-atlantis-config generate --output atlantis.yaml --autoplan --parallel
   workflow: terragrunt
