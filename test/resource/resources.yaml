@@ -1,1 +1,1 @@
-aws_s3_bucket_object.this: s3://lucy-test-hs/test.txt
+aws_s3_bucket_object.this: lucy-test-hs/test.txt
