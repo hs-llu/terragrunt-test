@@ -2,7 +2,8 @@ workflows:
   terragrunt:
     init:
       steps:
-        - run: tfenv install && tgenv install && terraform init
+        # - run: tfenv install && tgenv install && terragrunt init
+        - run: echo "hello"
     plan:
       steps:
         - run: ./import_resources.sh && terragrunt plan -no-color -out $PLANFILE
