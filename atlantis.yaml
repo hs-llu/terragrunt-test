@@ -1,4 +1,5 @@
 version: 3
+allow_custom_workflows: true
 workflows:
   terragrunt:
     # init:
